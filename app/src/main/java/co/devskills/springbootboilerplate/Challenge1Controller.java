@@ -1,5 +1,6 @@
 package co.devskills.springbootboilerplate;
 
+import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,11 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Challenge1Controller {
 
     @PostMapping("/challenge-1")
-    public int implementation(
+    public boolean implementation(
             @RequestBody int[] array) {
 
         // Write the code for Challenge 1 here
-
-        return -1;
+        throw new NotYetImplementedException();
     }
 }
